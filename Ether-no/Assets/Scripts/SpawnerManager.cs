@@ -1,3 +1,4 @@
+using Pathfinding;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -6,7 +7,9 @@ public class SpawnerManager : MonoBehaviour
     [SerializeField] private Transform[] transEnemies;
     [SerializeField] private GameObject enemy;
     [SerializeField]  private int round = 1;
-    
+
+    public Transform player;
+
     private int actualRound = 0;
     private GameObject refEnemy;
 
@@ -29,6 +32,7 @@ public class SpawnerManager : MonoBehaviour
 
                 int canthijos = transEnemy.childCount;
 
+                
                 for (int i = 0; i < canthijos; i++)
                 {
 
@@ -43,12 +47,13 @@ public class SpawnerManager : MonoBehaviour
                 for (int i = 0; i < cantRandom; i++)
                 {
 
-                    float x = Random.Range(0.5f, 1.5f);
-                    float y = Random.Range(0.5f, 1.5f);
+                    float x = Random.Range(0.5f, 3f);
+                    float y = Random.Range(0.5f, 3f);
 
                     Vector3 posicion = new Vector3(x, y);
 
                     refEnemy = Instantiate(enemy, transEnemy);
+                    refEnemy.GetComponent<AIDestinationSetter>().target = player;
 
                     refEnemy.GetComponent<Transform>().position += posicion;
 
