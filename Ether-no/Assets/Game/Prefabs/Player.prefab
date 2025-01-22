@@ -143,7 +143,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1868181493302402697}
+  - component: {fileID: 251629098202495216}
   - component: {fileID: 5220878095817446428}
+  - component: {fileID: 1870782320472466665}
+  - component: {fileID: 5786573927979909873}
   - component: {fileID: 2545865479905467099}
   m_Layer: 0
   m_Name: Player
@@ -168,6 +171,22 @@ Transform:
   - {fileID: 6006953561574337348}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &251629098202495216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4207092456095668949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073339d116a599d4692786c882ea31b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombre: DanyBoy
+  salud: 50
+  fe: 100
+  tieneEscudo: 0
 --- !u!114 &5220878095817446428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,6 +201,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2545865479905467099}
   speed: 5
+--- !u!114 &1870782320472466665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4207092456095668949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05280e948f33df341b26538e98b8405d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5786573927979909873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4207092456095668949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 132228ae05c19b34298fc191a20a7bfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _body: {fileID: 2500016464760252747}
+  tiempo: 30
+  segundosEscudo: 0
+  textMeshPro: {fileID: 0}
 --- !u!50 &2545865479905467099
 Rigidbody2D:
   serializedVersion: 5
