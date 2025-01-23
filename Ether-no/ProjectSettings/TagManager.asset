@@ -9,7 +9,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Obstaculos
@@ -42,9 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Paredes
-    uniqueID: 2959224633
-    locked: 0
   - name: Suelo
     uniqueID: 2322815579
     locked: 0
@@ -53,6 +50,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2201641333
+    locked: 0
+  - name: Paredes
+    uniqueID: 2959224633
     locked: 0
   m_RenderingLayers:
   - Default
